@@ -28,8 +28,8 @@ This document outlines my investigative process for Task 1 and Task 1B. As a beg
 ### Level 3: Automation vs. The "QR Bomb"
 * **The Strategy:** Faced with 3,000 QR codes, I realized manual analysis was a "rabbit hole" designed to waste time. 
 * **The Investigation:**
-    1. I designed a Python logic to automate the search. The plan was to use `PIL` for image handling and `pyzbar` for decoding.
-    2. **The Logic:** Iterate through all 3,000 files and `print()` only the content that matched the "Gdg" prefix.
+    1. I designed a Python logic (linked in qr_solver.py) to automate the search. The plan was to use `PIL` for image handling and `pyzbar` for decoding.
+    3. **The Logic:** Iterate through all 3,000 files and `print()` only the content that matched the "Gdg" prefix.
 * **The Roadblock:** I ran into a "to hell with dependencies" part where the `pyzbar` library could not link to the necessary `libzbar` system drivers on my local machine. I spent most of the remaining time troubleshooting the environment rather than running the final scan.
 
 ---
